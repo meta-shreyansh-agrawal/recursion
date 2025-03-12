@@ -11,8 +11,6 @@ public class Tests {
         assertThrows(IllegalArgumentException.class, ()->Search.linearSearch(new int[]{}, 6));
 
         assertEquals(3,Search.linearSearch(new int[]{2,3,1,6,3,4}, 6));
-        
-        
     }   
     @Test
     public void testBinarySearch(){
@@ -20,6 +18,6 @@ public class Tests {
         
         assertThrows(IllegalArgumentException.class, ()->Search.binarySearch(new int[]{1,4,2,5,6}, 6));
 
-        assertEquals(3,Search.binarySearch(new int[]{1,2,3,6,8,9}, 6));
+        assertEquals(2,Search.binarySearch(new int[]{1,2,3,6,8,9}, 3));
     }
 }
